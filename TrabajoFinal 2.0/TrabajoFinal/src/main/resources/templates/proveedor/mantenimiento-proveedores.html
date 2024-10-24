@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>BIT</title>
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Icon -->
+<link th:href="@{/images/logo.png}" rel="icon">
+<!-- bootstrap css -->
+
+
+</head>
+
+<head th:replace="layout/layoutHongo :: frag-head-hongo"></head>
+
+<!-- body -->
+
+<body>
+	<!-- loader  -->
+
+	<!-- end loader -->
+	<!-- header -->
+	<header th:replace="layout/layoutHongo :: frag-header ">
+		
+	</header>
+	<!-- end header -->
+
+
+	<main
+		style="display: flex; justify-content: center; padding-top: 4rem; margin-left: 3rem; margin-right: 3rem; flex-direction: column;">
+		<div class="card">
+
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="e-panel card">
+						<div class="card-header"
+							style="display: flex; flex-direction: row; justify-content: space-between;">
+							<h4>Mantenimiento de proveedores</h4>
+							<div class="col col-auto">
+
+								<button class="btn btn-success mt-4 mt-sm-0" data-toggle="modal"
+									data-target="#nuevoProveedor">
+									<i class="fe fe-plus mr-1 mt-1"></i> Agregar nuevo proveedor
+								</button>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="e-table">
+								<div class="table-responsive table-lg">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+
+												<th>Proveedor</th>
+												<th>Correo electronico</th>
+												<th>Teléfono</th>
+												<th class="text-center">Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr th:each="proveedor : ${listaProveedores}">
+												<input type="text"
+													th:id="*{'nomProveedorSend'+{proveedor.Cod_proveedor}}"
+													th:value="${proveedor.N_proveedor}" class="form-control"
+													hidden="true">
+												<input type="text"
+													th:id="*{'emailProveedorSend'+{proveedor.Cod_proveedor}}"
+													th:value="${proveedor.T_email}" class="form-control"
+													hidden="true">
+												<input type="text"
+													th:id="*{'numberProveedorSend'+{proveedor.Cod_proveedor}}"
+													th:value="${proveedor.Num_proveedor}" class="form-control"
+													hidden="true">
+												<td class="text-nowrap align-middle"
+													th:text="${proveedor.N_proveedor}"></td>
+												<td class="text-nowrap align-middle"
+													th:text="${proveedor.T_email}">Adam Cotter</td>
+												<td class="text-nowrap align-middle"
+													th:text="${proveedor.Num_proveedor}"><span>09
+														Dec 2017</span></td>
+
+												<td class="text-center align-middle">
+													<div class="btn-group align-top">
+														<button class="btn btn-sm btn-primary badge"
+															data-target="#editarProveedor" data-toggle="modal"
+															type="button"
+															th:onclick="'javascript:confirmEdit(\''+ ${proveedor.Cod_proveedor} +'\');'">Edit</button>
+														<button class="btn btn-sm btn-primary badge" type="button"
+															data-target="#eliminarProveedor" data-toggle="modal"
+															th:onclick="'javascript:confirmDelete(\''+ ${proveedor.Cod_proveedor} +'\');'">
+															<i class="fa fa-trash"></i>
+														</button>
+													</div>
+												</td>
+											</tr>
+
+
+
+
+
+
+
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- Nuevo proveedor Modal -->
+		<div class="modal fade" id="nuevoProveedor" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="example-Modal3">Nuevo proveedor</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form th:action="@{/oulala/proveedor/nuevo}"
+							th:object="${nuevoProveedor}">
+
+							<div class="form-group">
+								<label>Nombre del nuevo proveedor</label> <input type="text"
+									th:field="*{N_proveedor}" class="form-control" name="input"
+									placeholder="Ingrese el nombre del proveedor">
+							</div>
+							<div class="form-group">
+								<label>Correo electrónico</label> <input type="email"
+									th:field="*{T_email}" class="form-control" name="input"
+									placeholder="Ingrese su correo electrónico">
+							</div>
+							<div class="form-group">
+								<label>Teléfono</label> <input type="text" class="form-control" th:value=null
+									th:name="Num_proveedor" name="input"
+									placeholder="Ingrese el teléfono " maxlength="9" onkeypress="return validarNumero(event)" required>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-dismiss="modal">Cancelar</button>
+								<button type="submit" class="btn btn-primary">Registrar</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- row  end -->
+
+		<!-- Editar proveedor Modal -->
+		<div class="modal fade" id="editarProveedor" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="example-Modal3">Editar proveedor</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form th:action="@{/oulala/proveedor/editar}"
+							th:object="${editarProveedor}">
+
+							<div class="form-group" hidden="true">
+								<label>ID</label> <input type="text" th:field="*{Cod_proveedor}"
+									class="form-control" name="input" id="idProveedorCreate"
+									placeholder="Ingrese el nombre del proveedor">
+							</div>
+
+							<div class="form-group">
+								<label>Nombre del proveedor</label> <input type="text"
+									th:field="*{N_proveedor}" class="form-control" name="input"
+									id="nomProveedorCreate" placeholder="Enter Your Name">
+							</div>
+							<div class="form-group">
+								<label>Correo electrónico</label> <input type="email"
+									th:field="*{T_email}" id="emailProveedorCreate"
+									class="form-control" name="input" placeholder="Ingrese su correo electrónico">
+							</div>
+							<div class="form-group">
+								<label>Teléfono</label> <input type="text" class="form-control"
+									th:field="*{Num_proveedor}" id="numberProveedorCreate"
+									name="input" placeholder="Ingrese el teléfono " maxlength="9" onkeypress="return validarNumero(event)" required>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-dismiss="modal">Cancelar</button>
+								<button type="submit" class="btn btn-primary">Actualizar</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- row  end -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="eliminarProveedor" tabindex="-1"
+			role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<form class="modal-content"
+					th:action="@{/oulala/proveedor/eliminar}"
+					th:object="${eliminarProveedor}">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Eliminar
+							proveedor</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-group" hidden="true">
+							<label>ID</label> <input type="text" th:field="*{Cod_proveedor}"
+								class="form-control" name="input" id="idProveedorDelete"
+								placeholder="Enter Your Name">
+						</div>
+
+						<p>¿Está seguro de que quiere eliminar este proveedor?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Cancelar</button>
+						<button type="submit" class="btn btn-primary">Eliminar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</main>
+
+
+	<footer th:replace="layout/layoutHongo :: frag-footer-hongo"></footer>
+
+	<footer>
+		<div class="row">
+			<div class="col-12">
+				<div class="card" style="margin-bottom: 0px;">
+
+					<div class="card-body"
+						style="background: gray; border-top: 2px solid #000000;">
+						<div class="top-footer">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div class="col-lg-2 col-md-12">
+									<a class="header-brand" href="index.html"> <img
+										th:src="@{/images/logo2.png}"
+										style="width: 8rem; border: transparent;"
+										class="header-brand-img" alt="Hogo logo">
+									</a>
+									<p style="padding-top: 2rem;">Somos unos oulalas izis</p>
+
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>SERVICES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Dashboard</a></li>
+										<li><a href="javascript:;">Elements</a></li>
+										<li><a href="javascript:;">Forms</a></li>
+										<li><a href="javascript:;">Charts</a></li>
+										<li><a href="javascript:;">Tables</a></li>
+										<li><a href="javascript:;">Other Pages</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>CATEGORIES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Our Team</a></li>
+										<li><a href="javascript:;">Contact US</a></li>
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Services</a></li>
+										<li><a href="javascript:;">Blog</a></li>
+										<li><a href="javascript:;">Terms and Services</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<h6>CONTACT US</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Address1:7363 Old
+												Livingston Drive Dyersburg</a></li>
+										<li><a href="javascript:;">Address2:4 Harrison
+												St.Fairborn, OH 45324</a></li>
+										<li><a href="javascript:;">Phno1: +123 456 8976</a></li>
+										<li><a href="javascript:;">Phno2: +567 234 7865</a></li>
+										<li><a href="javascript:;">Mail1:
+												yourdomain@gmail.com</a></li>
+										<li><a href="javascript:;">Mail2:
+												infodomain@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</footer>
+
+	<script type="text/javascript">
+		function confirmEdit(id){
+
+
+			$("#idProveedorCreate").val(id);
+			
+		    var nomProveedorSend = $("#nomProveedorSend"+id).val();
+		    $("#nomProveedorCreate").val(nomProveedorSend);
+
+		    var emailProveedorSend = $("#emailProveedorSend"+id).val();
+		    $("#emailProveedorCreate").val(emailProveedorSend);
+
+		    var numberProveedorSend = $("#numberProveedorSend"+id).val();
+		    $("#numberProveedorCreate").val(numberProveedorSend);
+
+	}
+
+		function confirmDelete(id){
+
+
+			$("#idProveedorDelete").val(id);
+			
+		    
+
+	}
+
+		
+		</script>
+
+</body>
+
+</html>

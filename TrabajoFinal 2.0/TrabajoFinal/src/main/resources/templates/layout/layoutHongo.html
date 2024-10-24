@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<title>Bit</title>
+</head>
+<meta charset="UTF-8">
+<meta name='viewport'
+	content='width=device-width, initial-scale=1.0, user-scalable=0'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta
+	content="Hogo– Creative Admin Multipurpose Responsive Bootstrap4 Dashboard HTML Template"
+	name="description">
+<meta content="Spruko Technologies Private Limited" name="author">
+<meta name="keywords"
+	content="html admin template, bootstrap admin template premium, premium responsive admin template, admin dashboard template bootstrap, bootstrap simple admin template premium, web admin template, bootstrap admin template, premium admin template html5, best bootstrap admin template, premium admin panel template, admin template" />
+
+
+<head th:fragment="frag-head-hongo">
+<!-- Favicon -->
+<link rel="icon" th:href="@{/assets/images/brand/favicon.ico}"
+	type="image/x-icon}" />
+<link rel="shortcut icon" type="image/x-icon"
+	th:href="@{/assets/images/brand/favicon.ico}" />
+
+<!-- Title -->
+<title>Bit</title>
+
+<!--Bootstrap.min css-->
+<link rel="stylesheet"
+	th:href="@{/assets/plugins/bootstrap/css/bootstrap.min.css}">
+
+<!-- Dashboard css -->
+<link th:href="@{/assets/css/style.css}" rel="stylesheet" />
+
+
+
+
+<!-- Custom scroll bar css-->
+<link
+	th:href="@{/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css}"
+	rel="stylesheet" />
+
+<!-- Horizontal-menu css -->
+<link
+	th:href="@{/assets/plugins/horizontal-menu/dropdown-effects/fade-down.css}"
+	rel="stylesheet">
+<link th:href="@{/assets/plugins/horizontal-menu/horizontalmenu.css}"
+	rel="stylesheet">
+
+<!--Daterangepicker css-->
+<link
+	th:href="@{/assets/plugins/bootstrap-daterangepicker/daterangepicker.css}"
+	rel="stylesheet" />
+
+<!-- Sidebar Accordions css -->
+<link
+	th:href="@{/assets/plugins/accordion1/css/easy-responsive-tabs.css}"
+	rel="stylesheet">
+
+<!-- Rightsidebar css -->
+<link th:href="@{/assets/plugins/sidebar/sidebar.css}" rel="stylesheet">
+
+<!-- File Uploads css-->
+<link th:href="@{/assets/plugins/fileuploads/css/dropify.css}"
+	rel="stylesheet" type="text/css" />
+<!-- Morris  Charts css-->
+<link th:href="@{/assets/plugins/morris/morris.css}" rel="stylesheet" />
+
+<!---Font icons css-->
+<link th:href="@{/assets/plugins/iconfonts/plugin.css}" rel="stylesheet" />
+<link th:href="@{/assets/plugins/iconfonts/icons.css}" rel="stylesheet" />
+<link th:href="@{/assets/fonts/fonts/font-awesome.min.css}"
+	rel="stylesheet">
+
+</head>
+
+
+<body>
+
+	<header th:fragment="frag-header">
+
+		<div class="row"
+			style="display: flex; justify-content: center; flex-direction: column;">
+			<div class="col-md-12">
+				<div class="card" style="margin-bottom: 0px;">
+
+					<div class="header-style-1">
+						<div class="header headerMenu  py-4"
+							style="padding-bottom: 0rem !important;">
+							<div class="container">
+								<div class="d-flex"
+									style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; align-items: center; align-content: center; display: flex;">
+									<a class="header-brand" th:href="@{/oulala/index}"> <img
+										th:src="@{/images/logo.png}" class="header-brand-img"
+										alt="Hogo logo">
+									</a>
+									<div class="ml-auto mt-5 mb-0"
+										style="height: 100%; display: flex; flex-direction: row; align-items: center; align-content: center; display: flex;">
+										<div id="account-and-cart"
+											style="display: flex; flex-direction: row; align-items: center;">
+											<a style="display: flex; flex-direction: row;"
+												sec:authorize="isAnonymous()"
+												th:href="@{/oulala/index/login}" id="img-label-account">
+												<div class="dropdown header-notify" sec:authorize="isAuthenticated()" >
+									<a class="nav-link icon" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-user-circle-o" style="color: blue;"></i>
+										<span class="pulse bg-success"></span>
+									</a>
+									
+								</div> 
+								
+								<div class="dropdown header-notify">
+									<a th:href="@{/oulala/login}" class="nav-link icon"  aria-expanded="false">
+										<i class="fa fa-user-circle-o" style="color: blue;"></i>
+										<span class="pulse bg-success"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-192px, 57px, 0px);">
+										<a href="#" class="dropdown-item text-center">Opciones de usuario</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg bg-green">
+												<i class="fa fa-cog"></i>
+											</div> 
+											<div>
+												<strong>Cambiar contraseña</strong>
+												<div class="small text-muted">Usuario</div>
+											</div>
+										</a>
+										<a th:href="@{/logout}" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg bg-red">
+												<i class="fa fa-power-off"></i>
+											</div>
+											<div>
+												<strong>Cerrar sesión</strong>
+												<div class="small text-muted">Usuario</div>
+											</div>
+										</a>
+										
+										
+									</div>
+								</div>
+								
+												<label style="overflow-wrap: break-word; width: 6.9rem; color:#327AB7;" >
+													My account Login/Register</label>
+											</a> <a  id="img-label-account"  sec:authorize="isAuthenticated()"  >
+												
+												<div class="dropdown header-notify">
+									<a class="nav-link icon" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-user-circle-o " style="color: blue;"></i>
+										<span class="pulse bg-success"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-192px, 57px, 0px);">
+										<a href="#" class="dropdown-item text-center">Opciones de usuario</a>
+										<div class="dropdown-divider"></div>
+										<a sec:authorize="hasAnyRole('ROLE_CUSTOMER')" th:href="@{/oulala/edit}" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg bg-green">
+												<i class="fa fa-cog"></i>
+											</div> 
+											<div>
+												<strong>Cambiar contraseña</strong>
+												<div class="small text-muted">Usuario</div>
+											</div>
+										</a>
+										<a th:href="@{/logout}" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg bg-red">
+												<i class="fa fa-power-off"></i>
+											</div>
+											<div>
+												<strong>Cerrar sesión</strong>
+												<div class="small text-muted">Usuario</div>
+											</div>
+										</a>
+										
+										
+									</div>
+								</div>
+												
+												 <label
+												style="overflow-wrap: break-word; width: 6.9rem;padding-right: 1rem; color:#007bff;"
+												th:text="${nombreUsuario}"> My account
+													Login/Register</label>
+											</a> 
+											
+										
+										
+										
+											
+											<a
+												sec:authorize="hasAnyRole('ROLE_CUSTOMER','ROLE_ANONYMOUS')"
+												id="img-labe-cart"
+												th:href="@{/oulala/detalleventa/listarProductos}"> <i
+												style="color: blue; font-size: 1.8rem;"
+												class="fa fa-shopping-cart" aria-hidden="true"></i> <label
+												style="overflow-wrap: break-word; width: 6.9rem; padding-left: 1rem;"
+												th:text="${'Your Cart '+#numbers.formatDecimal(totalPagarCarrito, 1, 'COMMA', 2, 'POINT')}">
+													Your Cart $200.00</label>
+											</a>
+										</div>
+										
+									</div>
+									<a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0"
+										data-toggle="collapse" data-target="#headerMenuCollapse4">
+										<span class="header-toggler-icon"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header collapse d-lg-flex p-0"
+							id="headerMenuCollapse4">
+							<div class="container"
+								style="display: flex; justify-content: center;">
+								<div class="row align-items-center">
+									<div class="col-lg order-lg-first">
+										<ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+											<li
+												sec:authorize="hasAnyRole('ROLE_CUSTOMER','ROLE_ANONYMOUS')"
+												class="nav-item"><a th:href="@{/oulala/index}"
+												class="nav-link active">Inicio </a></li>
+											<li
+												sec:authorize="hasAnyRole('ROLE_CUSTOMER','ROLE_ANONYMOUS')"
+												class="nav-item dropdown"><a href="#novedades"
+												class="nav-link ">Novedades</a></li>
+											<li
+												sec:authorize="hasAnyRole('ROLE_CUSTOMER','ROLE_ANONYMOUS')"
+												class="nav-item"><a href="#marcas" class="nav-link">Marcas</a></li>
+
+											<li
+												sec:authorize="hasAnyRole('ROLE_CUSTOMER','ROLE_ANONYMOUS')"
+												class="nav-item"><a
+												th:href="@{/oulala/producto/listarProductos}"
+												class="nav-link ">Productos</a></li>
+
+
+											<li sec:authorize="hasAnyRole('ROLE_ADMIN')" class="nav-item">
+												<a th:href="@{/oulala/producto/manteminientoProductos}"
+												class="dropdown-item ">Mantenimientos de productos</a>
+											</li>
+
+											<li sec:authorize="hasAnyRole('ROLE_ADMIN')" class="nav-item">
+												<a th:href="@{/oulala/proveedor/manteminientoProveedores}"
+												class="dropdown-item ">Mantenimientos de proveedores</a>
+											</li>
+											<li sec:authorize="hasAnyRole('ROLE_ADMIN')" class="nav-item">
+												<a th:href="@{/oulala/cliente/lista}"
+												class="dropdown-item ">Lista de usuarios</a>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer th:fragment="frag-footer-hongo">
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Jquery js-->
+		<script th:src="@{/assets/js/vendors/jquery-3.2.1.min.js}"></script>
+
+		<!--Bootstrap.min js-->
+		<script th:src="@{/assets/plugins/bootstrap/popper.min.js}"></script>
+		<script th:src="@{/assets/plugins/bootstrap/js/bootstrap.min.js}"></script>
+
+		<!--Jquery Sparkline js-->
+		<script th:src="@{/assets/js/vendors/jquery.sparkline.min.js}"></script>
+
+		<!-- Chart Circle js-->
+		<script th:src="@{/assets/js/vendors/circle-progress.min.js}"></script>
+
+		<!-- Star Rating js-->
+		<script th:src="@{/assets/plugins/rating/jquery.rating-stars.js}"></script>
+
+		<!--Moment js-->
+		<script th:src="@{/assets/plugins/moment/moment.min.js}"></script>
+
+		<!-- Daterangepicker js-->
+		<script
+			th:src="@{/assets/plugins/bootstrap-daterangepicker/daterangepicker.js}"></script>
+
+		<!-- Horizontal-menu js -->
+		<script th:src="@{/assets/plugins/horizontal-menu/horizontalmenu.js}"></script>
+
+		<!-- Sidebar Accordions js -->
+		<script
+			th:src="@{/assets/plugins/accordion1/js/easyResponsiveTabs.js}"></script>
+
+		<!-- Custom scroll bar js-->
+		<script
+			th:src="@{/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js}"></script>
+
+		<!--Owl Carousel js -->
+		<script th:src="@{/assets/plugins/owl-carousel/owl.carousel.js}"></script>
+		<script th:src="@{/assets/plugins/owl-carousel/owl-main.js}"></script>
+
+		<!-- File uploads js -->
+		<script th:src="@{/assets/plugins/fileuploads/js/dropify.js}"></script>
+		<script th:src="@{/assets/plugins/fileuploads/js/dropify-demo.js}"></script>
+
+		<!-- Rightsidebar js -->
+		<script th:src="@{/assets/plugins/sidebar/sidebar.js}"></script>
+
+		<!-- Charts js-->
+		<script th:src="@{/assets/plugins/chart/chart.bundle.js}"></script>
+		<script th:src="@{/assets/plugins/chart/utils.js}"></script>
+
+		<!--Time Counter js-->
+		<script
+			th:src="@{/assets/plugins/counters/jquery.missofis-countdown.js}"></script>
+		<script th:src="@{/assets/plugins/counters/counter.js}"></script>
+
+		<!--Morris  Charts js-->
+		<script th:src="@{/assets/plugins/morris/raphael-min.js}"></script>
+		<script th:src="@{/assets/plugins/morris/morris.js}"></script>
+
+		<!-- Custom-charts js-->
+		<script th:src="@{/assets/js/index1.js}"></script>
+
+		<!-- Custom js-->
+		<script th:src="@{/assets/js/custom.js}"></script>
+
+
+
+		<script type="text/javascript">function validarNumero(e) {
+    tecla = (document.all) ? e.keyCode : e.which;
+    if (tecla==8) return true; 
+    patron =/[0-9]/;
+    te = String.fromCharCode(tecla); 
+    return patron.test(te); 
+ }
+
+function soloNumeros(evt){
+if(window.event){
+keynum=evt.keyCode;
+}
+else {keynum=evt.which;}
+
+if((keynum>47 && keynum<58)||keynum==8 ||keynum==13||keynum==46) {return true;}
+else {return false;}
+}
+</script>
+
+
+
+	</footer>
+
+</body>
+</html>

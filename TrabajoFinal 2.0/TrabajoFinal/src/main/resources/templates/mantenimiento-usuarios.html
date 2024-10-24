@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>BIT</title>
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Icon -->
+<link th:href="@{/images/logo.png}" rel="icon">
+<!-- bootstrap css -->
+
+
+</head>
+
+<head th:replace="layout/layoutHongo :: frag-head-hongo"></head>
+
+<!-- body -->
+
+<body>
+	<!-- loader  -->
+	<div id="global-loader">
+		<img th:src="@{/assets/images/icons/loader.svg}" alt="loader">
+	</div>
+	<!-- end loader -->
+	<!-- header -->
+	<header th:replace="layout/layoutHongo :: frag-header "> </header>
+	<!-- end header -->
+
+
+	<main
+		style="display: flex; justify-content: center; padding-top: 4rem; margin-left: 3rem; margin-right: 3rem; flex-direction: column;">
+		<div class="card">
+
+
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="e-panel card">
+						<div class="card-header"
+							style="display: flex; flex-direction: row; justify-content: space-between;">
+							<h4>Lista de usuarios</h4>
+							<div class="col col-auto">
+
+								
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="e-table">
+								<div class="table-responsive table-lg">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												
+												<th>Username</th>
+												<th>DNI</th>
+												<th>Nombre</th>
+												<th>Telefono</th>
+												
+											</tr>
+										</thead>
+										<tbody>
+											<tr th:each="usuario : ${listaUsuarios}">
+
+
+												<td class="text-nowrap align-middle"
+													th:text="${usuario.user.username}"></td>
+												<td class="text-nowrap align-middle"
+													th:text="${usuario.Num_DNI}">Adam Cotter</td>
+												<td class="text-nowrap align-middle"
+													th:text="${usuario.N_persona}"><span>09 Dec
+														2017</span></td>
+
+												<td class="text-nowrap align-middle"
+													th:text="${usuario.Num_telefono}"><span>09 Dec
+														2017</span></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	</main>
+
+
+	<footer th:replace="layout/layoutHongo :: frag-footer-hongo"></footer>
+
+	<footer>
+		<div class="row">
+			<div class="col-12">
+				<div class="card" style="margin-bottom: 0px;">
+
+					<div class="card-body"
+						style="background: gray; border-top: 2px solid #000000;">
+						<div class="top-footer">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div class="col-lg-2 col-md-12">
+									<a class="header-brand" href="index.html"> <img
+										th:src="@{/images/logo2.png}"
+										style="width: 8rem; border: transparent;"
+										class="header-brand-img" alt="Hogo logo">
+									</a>
+									<p style="padding-top: 2rem;">Somos unos oulalas izis</p>
+
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>SERVICES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Dashboard</a></li>
+										<li><a href="javascript:;">Elements</a></li>
+										<li><a href="javascript:;">Forms</a></li>
+										<li><a href="javascript:;">Charts</a></li>
+										<li><a href="javascript:;">Tables</a></li>
+										<li><a href="javascript:;">Other Pages</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>CATEGORIES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Our Team</a></li>
+										<li><a href="javascript:;">Contact US</a></li>
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Services</a></li>
+										<li><a href="javascript:;">Blog</a></li>
+										<li><a href="javascript:;">Terms and Services</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<h6>CONTACT US</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Address1:7363 Old
+												Livingston Drive Dyersburg</a></li>
+										<li><a href="javascript:;">Address2:4 Harrison
+												St.Fairborn, OH 45324</a></li>
+										<li><a href="javascript:;">Phno1: +123 456 8976</a></li>
+										<li><a href="javascript:;">Phno2: +567 234 7865</a></li>
+										<li><a href="javascript:;">Mail1:
+												yourdomain@gmail.com</a></li>
+										<li><a href="javascript:;">Mail2:
+												infodomain@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</footer>
+
+	<script type="text/javascript">
+		function confirmEdit(id){
+
+
+			$("#idProveedorCreate").val(id);
+			
+		    var nomProductoSend = $("#nomProductoSend"+id).val();
+		    $("#nomProveedorCreate").val(nomProductoSend);
+
+		    var cantidadProductoSend = $("#cantidadProductoSend"+id).val();
+		    $("#emailProveedorCreate").val(cantidadProductoSend);
+
+		    var precioProductoSend = $("#precioProductoSend"+id).val();
+		    $("#numberProveedorCreate").val(precioProductoSend);
+
+	}
+
+		function confirmDelete(id){
+
+
+			$("#idProveedorDelete").val(id);
+			
+		    
+
+	}
+
+		
+		</script>
+
+</body>
+
+</html>
