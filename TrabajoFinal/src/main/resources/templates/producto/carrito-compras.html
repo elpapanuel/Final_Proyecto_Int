@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>BIT</title>
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Icon -->
+<link th:href="@{/images/logo.png}" rel="icon">
+<!-- bootstrap css -->
+
+
+</head>
+
+<head th:replace="layout/layoutHongo :: frag-head-hongo"></head>
+
+<!-- body -->
+
+<body>
+	<!-- loader  -->
+<div id="global-loader">
+		<img th:src="@{/assets/images/icons/loader.svg}" alt="loader">
+	</div>
+	<!-- end loader -->
+	<!-- header -->
+	<header th:replace="layout/layoutHongo :: frag-header ">
+		
+	</header>
+	<!-- end header -->
+
+
+	<main>
+
+		<div
+			style="padding-left: 10rem; padding-right: 10rem; padding-top: 4rem; display: block; flex-direction: column; justify-content: center;">
+
+			<div class="row row-cards">
+							<div class="col-lg-12 col-md-12 col-sm-12 bootstrap snippets">
+								<!-- Cart -->
+								<div class="card">
+									<div class="card-header">
+										<span class="card-title">Carrito de compras</span>
+									</div>
+									<div class="card-body hero-feature">
+										<div class="table-responsive push">
+											<table class="table table-bordered table-hover tbl-cart text-nowrap">
+												<thead>
+													<tr>
+														<td class="hidden-xs"></td>
+														<td>Producto</td>
+														<td>Precio unitario</td>
+														<td>Unidades</td>
+														<td>Subtotal</td>
+														<td>Eliminar</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr th:each="carritoCompra: ${carritoCompras}">
+														<td class="hidden-xs">
+															<a href="#">
+																<img th:src="*{'data:image/jpeg;base64,'+{carritoCompra.producto.image}}" alt="Metal Watch" title="" width="47" height="47">
+															</a>
+														</td>
+														<td><a href="#"th:text="${carritoCompra.producto.N_producto}">Metal Watch</a>
+														</td>
+														<td class="price" th:text="${'S/'+#numbers.formatDecimal(carritoCompra.producto.Monto_unitario, 1, 'COMMA', 2, 'POINT')}" >$ 122.21</td>
+														<td>
+															<div class="input-group bootstrap-touchspin w-50">
+																<span class="input-group-btn" th:if="${carritoCompra.Q_unidades>1}">
+																	<a disabled th:href="@{'/oulala/detalleventa/restarProductos/'+${carritoCompra.Cod_carrito_compra}}" class="btn btn-primary bootstrap-touchspin-down" type="button">-</a>
+																</span>
+																<span class="input-group-addon bootstrap-touchspin-prefix d-none"></span>
+																<input readonly="readonly" type="text" name="product" th:value="${carritoCompra.Q_unidades}" class="input-qty form-control text-center d-block">
+																<span class="input-group-addon bootstrap-touchspin-postfix d-none"></span>
+																<span class="input-group-btn">
+																	<a th:href="@{'/oulala/detalleventa/sumarProductos/'+${carritoCompra.Cod_carrito_compra}}" class="btn btn-primary  bootstrap-touchspin-up" type="button">+</a>
+																</span>
+															</div>
+														</td>
+														<td class="price" th:text="${'S/'+#numbers.formatDecimal(carritoCompra.producto.Monto_unitario*carritoCompra.Q_unidades, 1, 'COMMA', 2, 'POINT')}" >$ 122.21</td>
+														<td class="text-center">
+															<span class="remove_cart">
+																<a th:href="@{'/oulala/detalleventa/eliminarProducto/'+${carritoCompra.Cod_carrito_compra}}" class="btn btn-danger bootstrap-touchspin-down" type="button"><i class="fa fa-trash-o"></i></a>
+															</span>
+														</td>
+													</tr>
+													
+													
+													
+												</tbody>
+											</table>
+										</div>
+										
+
+
+									</div>
+								</div>
+								<!-- End Cart -->
+							</div>
+
+							<div class="col-lg-12">
+								<div class="card ">
+									<div class="card-header ">
+										<h3 class="card-title">Resumen de Compra</h3>
+									</div>
+									<div class="card-body">
+										<div class="table-responsive">
+											<table class="table table-bordered align-items-center">
+												<tbody>
+													<tr>
+														<td>Cantidad de productos</td>
+														<td class="text-right" th:text="${cantidadProductos}">$456.00</td>
+													</tr>
+													
+													<tr>
+														<td><span>Total a pagar</span></td>
+														<td><h2 class="price text-right mb-0" th:text="${totalPagar}">$456.00</h2></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<form class="text-center mt-0">
+											<a th:href="@{/oulala/producto/listarProductos}" class="btn btn-primary  mt-2"><i class="fa fa-arrow-circle-left"></i> Seguir comprando</a>
+											<a style="color: white;" data-toggle="modal" data-target="#metodoPago"  th:if="${carritoCompras.size()>0}"  class="btn btn-success mt-2">Pagar <i class="fa fa-arrow-circle-right"></i></a>
+											<a style="opacity: 60%;" th:unless="${carritoCompras.size()>0}" href="#" class="btn btn-success mt-2">Pagar <i class="fa fa-arrow-circle-right"></i></a>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+		</div>
+
+<!-- Metodo de pago -->
+		<div class="modal fade" id="metodoPago" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="example-Modal3">Metodos de pago</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+
+							<div class="form-group">
+								<label>Tarjeta de crédito</label> 
+								<div id="tarjetas-1" style="display: flex;flex-direction: row;">
+								<div id="caja-1"> <input  type="radio" id="visa" name="visa"> <img  style="padding-right: 2rem;" for="mastercard" alt="" th:src="@{/images/mastercard.png}"> <input  type="radio" id="visa" name="visa"> <img for="visa" style="width: 4.7rem;" alt="" th:src="@{/images/visa.png}"> </div>
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label>Efectivo</label> 
+								
+								<div id="caja-2"> <input type="radio" id="visa" name="visa"> <img  style="padding-right: 2rem;" for="mastercard" alt="" th:src="@{/images/bancos.png}"> <input type="radio" id="visa" name="visa"> <img for="visa" style="width: 4.7rem;" alt="" th:src="@{/images/pagoefectivo.png}"> </div>
+								
+							</div>
+							<div class="form-group">
+								<label>Otros métodos</label> 
+								<div id="caja-3"> <input  type="radio" id="visa" name="visa"> <img style="width: 7rem;padding-right: 2rem;" for="mastercard" alt="" th:src="@{/images/paypal .png}"> <input type="radio" id="visa" name="visa"> <img for="visa" style="width: 4.7rem;" alt="" th:src="@{/images/americanexpress.png}"> </div>
+								
+								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#exito">Pagar</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- row  end -->
+
+
+<!-- exito -->
+		<div class="modal fade" id="exito" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="example-Modal3">Metodos de pago</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+
+							
+							<div class="form-group" style="display: flex;justify-content: center;width: 100%;flex-direction: column; text-align: center;" >
+								<i class="zmdi zmdi-assignment-check" style="font-size: 4rem;color: green;" data-toggle="tooltip" title="GAAA" data-original-title="zmdi zmdi-assignment-check"></i>
+							<label>Compra realizada exitosamente</label>
+							</div>
+							
+							<div class="modal-footer" style="display: flex;justify-content: center;">
+								<a  style="width: 80%;" class="btn btn-secondary"
+									th:href="@{/oulala/venta/nuevo}">Aceptar</a>
+								
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- row  end -->
+
+
+	</main>
+
+
+	<footer th:replace="layout/layoutHongo :: frag-footer-hongo"></footer>
+
+	<footer>
+		<div class="row">
+			<div class="col-12">
+				<div class="card" style="margin-bottom: 0px;">
+
+					<div class="card-body"
+						style="background: gray; border-top: 2px solid #000000;">
+						<div class="top-footer">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div class="col-lg-2 col-md-12">
+									<a class="header-brand" href="index.html"> <img
+										th:src="@{/images/logo2.png}"
+										style="width: 8rem; border: transparent;"
+										class="header-brand-img" alt="Hogo logo">
+									</a>
+									<p style="padding-top: 2rem;">Somos unos oulalas izis</p>
+
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>SERVICES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Dashboard</a></li>
+										<li><a href="javascript:;">Elements</a></li>
+										<li><a href="javascript:;">Forms</a></li>
+										<li><a href="javascript:;">Charts</a></li>
+										<li><a href="javascript:;">Tables</a></li>
+										<li><a href="javascript:;">Other Pages</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>CATEGORIES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Our Team</a></li>
+										<li><a href="javascript:;">Contact US</a></li>
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Services</a></li>
+										<li><a href="javascript:;">Blog</a></li>
+										<li><a href="javascript:;">Terms and Services</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<h6>CONTACT US</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Address1:7363 Old
+												Livingston Drive Dyersburg</a></li>
+										<li><a href="javascript:;">Address2:4 Harrison
+												St.Fairborn, OH 45324</a></li>
+										<li><a href="javascript:;">Phno1: +123 456 8976</a></li>
+										<li><a href="javascript:;">Phno2: +567 234 7865</a></li>
+										<li><a href="javascript:;">Mail1:
+												yourdomain@gmail.com</a></li>
+										<li><a href="javascript:;">Mail2:
+												infodomain@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

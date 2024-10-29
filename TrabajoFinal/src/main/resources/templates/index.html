@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>BIT</title>
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Icon -->
+<link th:href="@{/images/logo.png}" rel="icon">
+<!-- bootstrap css -->
+
+
+</head>
+
+<head th:replace="layout/layoutHongo :: frag-head-hongo"></head>
+
+<!-- body -->
+
+<body>
+	<div id="global-loader">
+		<img th:src="@{/assets/images/icons/loader.svg}" alt="loader">
+	</div>
+	
+	
+	<!-- header -->
+	<header th:replace="layout/layoutHongo :: frag-header ">
+		
+	</header>
+	<!-- end header -->
+
+
+	<main>
+		<div id="carousel-controls" class="carousel slide"
+			data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" alt="" th:src="@{/images/imagen1.png}"
+						data-holder-rendered="true">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" alt="" th:src="@{/images/imagen2.png}"
+						data-holder-rendered="true">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" alt="" th:src="@{/images/imagen3.png}"
+						data-holder-rendered="true">
+				</div>
+
+			</div>
+			<a class="carousel-control-prev" href="#carousel-controls"
+				role="button" data-slide="prev"> <span
+				class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+				class="sr-only">Previous</span>
+			</a> <a class="carousel-control-next" href="#carousel-controls"
+				role="button" data-slide="next"> <span
+				class="carousel-control-next-icon" aria-hidden="true"></span> <span
+				class="sr-only">Next</span>
+			</a>
+		</div>
+		<div
+			style="padding-left: 12rem; padding-right: 12rem; display: block; flex-direction: column; justify-content: center;">
+
+			<div class="gallery row"
+				style="padding-top: 1.2rem; display: flex; justify-content: space-between;">
+				<div class="col-lg-4 hover15" style="padding-top: 1.9rem;">
+					<div id="carouselExampleSlidesOnly" class="carousel slide"
+						data-bs-ride="carousel">
+						<div class="carousel-inner" style="width: auto;">
+							<div class="carousel-item active">
+								<img th:src="@{/images/imagen4.png}" class="d-block w-100"
+									alt="...">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 hover15" style="padding-top: 1.9rem;">
+					<div id="carouselExampleSlidesOnly" class="carousel slide"
+						data-bs-ride="carousel">
+						<div class="carousel-inner" style="width: auto;">
+							<div class="carousel-item active">
+								<img th:src="@{/images/imagen5.png}" class="d-block w-100"
+									alt="...">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+			<div id="carouselExampleSlidesOnly" class="carousel slide"
+				style="padding-top: 2rem; display: flex; justify-content: center;"
+				data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img th:src="@{/images/imagen6.png}" class="d-block w-100"
+							alt="...">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1 id="novedades"
+			style="padding: 4rem; color: blue; justify-content: center; display: flex;">Novedades</h1>
+
+		<div
+			style="padding-left: 12rem; padding-right: 12rem; display: block; flex-direction: column; justify-content: center;">
+			<div class="gallery row">
+				<div class="col-lg-4 hover15" th:each="producto :${productos}"
+					style="display: flex; justify-content: center;">
+					<div class="card shadow overflow-hidden"
+						style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+						<a th:href="@{'/oulala/producto/detalleProducto/'+${producto.Cod_producto}}" class="big"
+							style="display: flex; justify-content: center;"><img
+							th:src="*{'data:image/jpeg;base64,'+{producto.image}}" alt="" style="width: 20rem;"
+							title="Beautiful Image"></a>
+						<p style="text-align: center; padding-top: 3rem;" th:text="${producto.N_producto}">Iphone 13 -
+							128 GB - Azul</p>
+						<p style="text-align: center;" th:text="${'S/'+#numbers.formatDecimal(producto.Monto_unitario, 1, 'COMMA', 2, 'POINT')}">S/ 5,199.00</p>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+
+
+			</div>
+
+			<div id="2-images" style="display: flex; flex-wrap: wrap;">
+				<img alt="" th:src="@{/images/imagen7.png}" style="width: 30%">
+				<img alt="" th:src="@{/images/imagen8.png}"
+					style="width: 70%; padding-left: 10%;">
+			</div>
+
+			<h1 id="marcas"
+				style="padding: 4rem; color: blue; justify-content: center; display: flex;">Marcas</h1>
+
+			<div class="card-body"
+				style="display: flex; justify-content: space-between;">
+				<div class="nav-wrapper p-0">
+					<ul class="nav nav-pills nav-fill flex-column flex-md-row"
+						id="tabs-icons-text" role="tablist">
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/Marca1.png}" alt=""
+										style="width: 19rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/Marcas2.png}" alt=""
+										style="width: 19rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/Marca3.png}" alt=""
+										style="width: 19rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/Marca4.png}" alt=""
+										style="width: 19rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="card-body"
+				style="display: flex; justify-content: center; border-top: 2px solid #000000;">
+				<div class="nav-wrapper p-0">
+					<ul class="nav nav-pills nav-fill flex-column flex-md-row"
+						id="tabs-icons-text" role="tablist">
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/fb.png}" alt=""
+										style="width: 7rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/ig.png}" alt=""
+										style="width: 7rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/tiktok.png}" alt=""
+										style="width: 7rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+						<li class="nav-item"
+							style="display: flex !important; justify-content: center;"><div
+								class="col-lg-4 hover15"
+								style="display: flex; justify-content: center;">
+								<div class="card shadow overflow-hidden"
+									style="background: transparent; font-weight: bold; display: flex; justify-content: center;">
+									<a href="#" class="big"
+										style="display: flex; justify-content: center;"><img
+										th:src="@{/images/yt.png}" alt=""
+										style="width: 7rem; padding-top: 2rem; padding-bottom: 2rem;"
+										title="Beautiful Image"></a>
+
+								</div>
+							</div></li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<footer th:replace="layout/layoutHongo :: frag-footer-hongo"></footer>
+
+	<footer>
+		<div class="row">
+			<div class="col-12">
+				<div class="card" style="margin-bottom: 0px;">
+
+					<div class="card-body"
+						style="background: gray; border-top: 2px solid #000000;">
+						<div class="top-footer">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div class="col-lg-2 col-md-12">
+									<a class="header-brand" href="index.html"> <img
+										th:src="@{/images/logo2.png}"
+										style="width: 8rem; border: transparent;"
+										class="header-brand-img" alt="Hogo logo">
+									</a>
+									<p style="padding-top: 2rem;">Somos unos oulalas izis</p>
+
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>SERVICES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Dashboard</a></li>
+										<li><a href="javascript:;">Elements</a></li>
+										<li><a href="javascript:;">Forms</a></li>
+										<li><a href="javascript:;">Charts</a></li>
+										<li><a href="javascript:;">Tables</a></li>
+										<li><a href="javascript:;">Other Pages</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>CATEGORIES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Our Team</a></li>
+										<li><a href="javascript:;">Contact US</a></li>
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Services</a></li>
+										<li><a href="javascript:;">Blog</a></li>
+										<li><a href="javascript:;">Terms and Services</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<h6>CONTACT US</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Address1:7363 Old
+												Livingston Drive Dyersburg</a></li>
+										<li><a href="javascript:;">Address2:4 Harrison
+												St.Fairborn, OH 45324</a></li>
+										<li><a href="javascript:;">Phno1: +123 456 8976</a></li>
+										<li><a href="javascript:;">Phno2: +567 234 7865</a></li>
+										<li><a href="javascript:;">Mail1:
+												yourdomain@gmail.com</a></li>
+										<li><a href="javascript:;">Mail2:
+												infodomain@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
