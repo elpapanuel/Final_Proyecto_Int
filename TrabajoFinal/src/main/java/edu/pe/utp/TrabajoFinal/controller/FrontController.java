@@ -19,11 +19,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.support.SessionStatus;
 
-import edu.pe.utp.TrabajoFinal.entity.Authority;
-import edu.pe.utp.TrabajoFinal.entity.CarritoCompra;
-import edu.pe.utp.TrabajoFinal.entity.Cliente;
-import edu.pe.utp.TrabajoFinal.entity.Producto;
-import edu.pe.utp.TrabajoFinal.entity.User;
+import edu.pe.utp.TrabajoFinal.model.Authority;
+import edu.pe.utp.TrabajoFinal.model.CarritoCompra;
+import edu.pe.utp.TrabajoFinal.model.Cliente;
+import edu.pe.utp.TrabajoFinal.model.Producto;
+import edu.pe.utp.TrabajoFinal.model.User;
 import edu.pe.utp.TrabajoFinal.security.MyUserDetails;
 import edu.pe.utp.TrabajoFinal.service.AuthorityService;
 import edu.pe.utp.TrabajoFinal.service.ClienteService;

@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import edu.pe.utp.TrabajoFinal.entity.CarritoCompra;
-import edu.pe.utp.TrabajoFinal.entity.Cliente;
-import edu.pe.utp.TrabajoFinal.entity.DetalleVenta;
-import edu.pe.utp.TrabajoFinal.entity.Producto;
-import edu.pe.utp.TrabajoFinal.entity.Venta;
+import edu.pe.utp.TrabajoFinal.model.CarritoCompra;
+import edu.pe.utp.TrabajoFinal.model.Cliente;
+import edu.pe.utp.TrabajoFinal.model.DetalleVenta;
+import edu.pe.utp.TrabajoFinal.model.Producto;
+import edu.pe.utp.TrabajoFinal.model.Venta;
 import edu.pe.utp.TrabajoFinal.service.CarritoCompraService;
 import edu.pe.utp.TrabajoFinal.service.ClienteService;
 import edu.pe.utp.TrabajoFinal.service.DetalleVentaService;

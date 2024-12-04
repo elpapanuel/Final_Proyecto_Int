@@ -1,4 +1,4 @@
-package pe.edu.upc.SpringStartupInvest.security;
+package edu.pe.utp.TrabajoFinal.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -39,35 +39,35 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
-			
+	
 		http
 		.authorizeRequests()
-		.antMatchers("/startupinvest").permitAll();
-			
+		.antMatchers("/oulala").permitAll();
 		http
 		.authorizeRequests()
-		.antMatchers("/startupinvest/home").hasAnyRole("INVESTOR","STARTUP","ADMIN")
-		
-		
-		.antMatchers("/startupinvest/startups/view/profile/edit").hasAnyRole("STARTUP")	
-		.antMatchers("/startupinvest/publications/").hasAnyRole("STARTUP")
-		.antMatchers("/startupinvest/startups/**").hasAnyRole("STARTUP","INVESTOR")
-		.antMatchers("/startupinvest/investors/perfil").hasRole("INVESTOR")
-		.antMatchers("/startupinvest/investors/perfil/edit").hasRole("INVESTOR")
-		.antMatchers("/startupinvest/administrator").hasRole("ADMIN")
-		.antMatchers("/startupinvest/category/administrator/categories").hasRole("ADMIN")
-		.antMatchers("/startupinvest/administrator/plans").hasRole("ADMIN")
+		.antMatchers("/oulala/index/login").hasAnyRole("CUSTOMER","ADMIN")
+		.antMatchers("/oulala/proveedor/manteminientoProveedores","/oulala/proveedor/manteminientoProveedores").hasAnyRole("ADMIN")
+		.antMatchers("/oulala/producto/manteminientoProductos","/oulala/producto/manteminientoProductos").hasAnyRole("ADMIN")
+		.antMatchers("/oulala/cliente/lista","/oulala/cliente/lista").hasAnyRole("ADMIN")
 		.and()
+		
+		// .formLogin()
+         //.loginPage("/oulala/login")
+         //.failureUrl("/oulala/login?error=true") // Redirigir con el parámetro "error"
+        //.defaultSuccessUrl("/oulala/index/login", true)
+         	
+		
 		.formLogin()
-		  .loginProcessingUrl("/signin")
-		 .loginPage("/startupinvest/login")
-		 .usernameParameter("username")
-		 .passwordParameter("password")
+		.loginProcessingUrl("/signin").defaultSuccessUrl("/oulala/index")
+		.loginPage("/oulala/login")
+		.failureUrl("/oulala/login?error=true") // Redirigir con el parámetro "error"
+		.usernameParameter("username")
+		.passwordParameter("password")
+		
 		 .and()
 		 .logout()
 		 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-		 .logoutSuccessUrl("/startupinvest/home")
-		 
+		 .logoutSuccessUrl("/oulala/index")
 		;		
 		}
 

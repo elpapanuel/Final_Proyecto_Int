@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.support.SessionStatus;
 
-import edu.pe.utp.TrabajoFinal.entity.Cliente;
+import edu.pe.utp.TrabajoFinal.model.Cliente;
 import edu.pe.utp.TrabajoFinal.security.MyUserDetails;
 import edu.pe.utp.TrabajoFinal.service.ClienteService;
 

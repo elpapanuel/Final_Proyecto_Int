@@ -1,4 +1,4 @@
-package edu.pe.utp.TrabajoFinal.entity;
+package edu.pe.utp.TrabajoFinal.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

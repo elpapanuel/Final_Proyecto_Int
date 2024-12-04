@@ -1,0 +1,24 @@
+<configuration>
+
+    <!-- Consola de salida -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern> <!-- Formato del log -->
+        </encoder>
+    </appender>
+
+    <!-- Fichero de salida -->
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>logs/app.log</file> <!-- Ubicación del archivo de log -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern> <!-- Formato del log -->
+        </encoder>
+    </appender>
+
+    <!-- Configuración del log para la raíz -->
+    <root level="INFO">
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />
+    </root>
+
+</configuration>

@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-<head>
+	
+<head >
+
+<head th:replace="layout/layoutHongo :: frag-head-hongo"></head>
+
 <meta charset="UTF-8">
 <title>Login</title>
 <link
@@ -15,8 +19,18 @@
 	rel="icon">
 <link rel="icon" th:href="@{/assets/images/brand/favicon.ico}"
 	type="image/x-icon}" />
+
+
+
 </head>
 <body>
+
+	<!-- header -->
+	<header th:replace="layout/layoutHongo :: frag-header ">
+		
+	</header>
+	<!-- end header -->
+	
 
 	<section class="user">
 		<div class="user_options-container">
@@ -38,11 +52,18 @@
 					<button class="user_registered-login" id="login-button">Login</button>
 				</div>
 			</div>
+			
 
 			<div class="user_options-forms" id="user_options-forms">
 				<div class="user_forms-login">
 					<h2 class="forms_title">Login</h2>
 					<form class="forms_form" th:action="@{/signin}" method="post">
+					
+        				<div th:if="${param.error}" class="error-message">
+            				<p style="color: red; font-size: 14px; text-align: center;">Usuario o contraseña es invalido. Por favor inténtalo de nuevo.</p>
+        				</div>
+						
+						
 						<fieldset class="forms_fieldset">
 							<div class="forms_field">
 								<input type="text" autocomplete="off"
@@ -60,6 +81,9 @@
 						</div>
 					</form>
 				</div>
+				
+				
+				
 				<div class="user_forms-signup">
 					<h2 class="forms_title">Register</h2>
 					<form class="forms_form">
@@ -87,6 +111,74 @@
 	</section>
 	<!-- partial -->
 	<script th:src="@{/dist/script.js}"></script>
+
+
+<footer th:replace="layout/layoutHongo :: frag-footer-hongo"></footer>
+
+	<footer>
+		<div class="row">
+			<div class="col-12">
+				<div class="card" style="margin-bottom: 0px;">
+
+					<div class="card-body"
+						style="background: gray; border-top: 2px solid #000000;">
+						<div class="top-footer">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div class="col-lg-2 col-md-12">
+									<a class="header-brand" href="index.html"> <img
+										th:src="@{/images/logo2.png}"
+										style="width: 8rem; border: transparent;"
+										class="header-brand-img" alt="Hogo logo">
+									</a>
+									<p style="padding-top: 2rem;">Somos unos oulalas izis</p>
+
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>SERVICES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Dashboard</a></li>
+										<li><a href="javascript:;">Elements</a></li>
+										<li><a href="javascript:;">Forms</a></li>
+										<li><a href="javascript:;">Charts</a></li>
+										<li><a href="javascript:;">Tables</a></li>
+										<li><a href="javascript:;">Other Pages</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>CATEGORIES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Our Team</a></li>
+										<li><a href="javascript:;">Contact US</a></li>
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Services</a></li>
+										<li><a href="javascript:;">Blog</a></li>
+										<li><a href="javascript:;">Terms and Services</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<h6>CONTACT US</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Address1:7363 Old
+												Livingston Drive Dyersburg</a></li>
+										<li><a href="javascript:;">Address2:4 Harrison
+												St.Fairborn, OH 45324</a></li>
+										<li><a href="javascript:;">Phno1: +123 456 8976</a></li>
+										<li><a href="javascript:;">Phno2: +567 234 7865</a></li>
+										<li><a href="javascript:;">Mail1:
+												yourdomain@gmail.com</a></li>
+										<li><a href="javascript:;">Mail2:
+												infodomain@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 
 </body>
 

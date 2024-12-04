@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import edu.pe.utp.TrabajoFinal.entity.User;
+import edu.pe.utp.TrabajoFinal.model.User;
 import edu.pe.utp.TrabajoFinal.repository.UserRepository;
 
 

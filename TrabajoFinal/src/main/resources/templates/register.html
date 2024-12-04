@@ -20,6 +20,14 @@
 	<head><link th:href="@{/assets/plugins/notify/css/notifIt.css}" rel="stylesheet"></head>
 	<body class="bg-account" style="background-image: radial-gradient(circle at 120.71% 50%, #c0ffff 0, #a3feff 16.67%, #7eeaf7 33.33%, #48d1e5 50%, #00b9d5 66.67%, #00a4c8 83.33%, #0094c0 100%);">
 	    <!-- page -->
+	    
+	    	<!-- header -->
+	<header th:replace="layout/layoutHongo :: frag-header ">
+		
+	</header>
+	<!-- end header -->
+	
+	
 		<div class="page" style="background-image: radial-gradient(circle at 120.71% 50%, #c0ffff 0, #a3feff 16.67%, #7eeaf7 33.33%, #48d1e5 50%, #00b9d5 66.67%, #00a4c8 83.33%, #0094c0 100%);" >
 
 			<!-- page-content -->
@@ -80,8 +88,70 @@
 		</div>
 		<!-- page End-->
 
-		<footer th:replace="layout/layoutHongo :: frag-footer-hongo">
+
+	<footer>
+		<div class="row">
+			<div class="col-12">
+				<div class="card" style="margin-bottom: 0px;">
+					<div class="card-body"
+						style="background: gray; border-top: 2px solid #000000;">
+						<div class="top-footer">
+							<div class="row" style="display: flex; justify-content: center;">
+								<div class="col-lg-2 col-md-12">
+									<a class="header-brand" href="index.html"> <img
+										th:src="@{/images/logo2.png}"
+										style="width: 8rem; border: transparent;"
+										class="header-brand-img" alt="Hogo logo">
+									</a>
+									<p style="padding-top: 2rem;">Somos unos oulalas izis</p>
+
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>SERVICES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Dashboard</a></li>
+										<li><a href="javascript:;">Elements</a></li>
+										<li><a href="javascript:;">Forms</a></li>
+										<li><a href="javascript:;">Charts</a></li>
+										<li><a href="javascript:;">Tables</a></li>
+										<li><a href="javascript:;">Other Pages</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-12">
+									<h6>CATEGORIES</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Our Team</a></li>
+										<li><a href="javascript:;">Contact US</a></li>
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Services</a></li>
+										<li><a href="javascript:;">Blog</a></li>
+										<li><a href="javascript:;">Terms and Services</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<h6>CONTACT US</h6>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">Address1:7363 Old
+												Livingston Drive Dyersburg</a></li>
+										<li><a href="javascript:;">Address2:4 Harrison
+												St.Fairborn, OH 45324</a></li>
+										<li><a href="javascript:;">Phno1: +123 456 8976</a></li>
+										<li><a href="javascript:;">Phno2: +567 234 7865</a></li>
+										<li><a href="javascript:;">Mail1:
+												yourdomain@gmail.com</a></li>
+										<li><a href="javascript:;">Mail2:
+												infodomain@gmail.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
+
 		
 	<script type="text/javascript">
 

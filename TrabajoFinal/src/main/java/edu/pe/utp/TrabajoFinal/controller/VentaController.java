@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.support.SessionStatus;
 
-import edu.pe.utp.TrabajoFinal.entity.CarritoCompra;
-import edu.pe.utp.TrabajoFinal.entity.Cliente;
-import edu.pe.utp.TrabajoFinal.entity.DetalleVenta;
-import edu.pe.utp.TrabajoFinal.entity.Venta;
+import edu.pe.utp.TrabajoFinal.model.CarritoCompra;
+import edu.pe.utp.TrabajoFinal.model.Cliente;
+import edu.pe.utp.TrabajoFinal.model.DetalleVenta;
+import edu.pe.utp.TrabajoFinal.model.Venta;
 import edu.pe.utp.TrabajoFinal.security.MyUserDetails;
 import edu.pe.utp.TrabajoFinal.service.CarritoCompraService;
 import edu.pe.utp.TrabajoFinal.service.ClienteService;

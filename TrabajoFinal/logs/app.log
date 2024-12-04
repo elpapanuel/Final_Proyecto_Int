@@ -1,0 +1,759 @@
+2024-11-27 21:02:10 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 21:02:10 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 9820 (C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 21:02:10 - No active profile set, falling back to default profiles: default
+2024-11-27 21:02:10 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-27 21:02:10 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-27 21:02:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 21:02:11 - Finished Spring Data repository scanning in 85 ms. Found 11 JPA repository interfaces.
+2024-11-27 21:02:12 - Tomcat initialized with port(s): 8080 (http)
+2024-11-27 21:02:12 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:02:12 - Starting service [Tomcat]
+2024-11-27 21:02:12 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-11-27 21:02:12 - Initializing Spring embedded WebApplicationContext
+2024-11-27 21:02:12 - Root WebApplicationContext: initialization completed in 1510 ms
+2024-11-27 21:02:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 21:02:12 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 21:02:12 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 21:02:12 - HikariPool-1 - Starting...
+2024-11-27 21:02:12 - HikariPool-1 - Start completed.
+2024-11-27 21:02:12 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 21:02:13 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 21:02:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:02:14 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:02:14 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2341cdd9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1785896b, org.springframework.security.web.header.HeaderWriterFilter@1ecdc6cc, org.springframework.security.web.csrf.CsrfFilter@122a6499, org.springframework.security.web.authentication.logout.LogoutFilter@2198190e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5caa5727, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13d7046e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21a5c39c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d1e110c, org.springframework.security.web.session.SessionManagementFilter@25485916, org.springframework.security.web.access.ExceptionTranslationFilter@57f18838, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7bac7e44]
+2024-11-27 21:02:14 - Adding welcome page template: index
+2024-11-27 21:02:14 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 21:02:15 - LiveReload server is running on port 35729
+2024-11-27 21:02:15 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-27 21:02:15 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:02:15 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-27 21:02:15 - Started TrabajoFinalApplication in 5.05 seconds (JVM running for 5.74)
+2024-11-27 21:02:17 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:02:17 - Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:02:17 - Completed initialization in 2 ms
+2024-11-27 21:02:42 - Recuperando todas las entidades
+2024-11-27 21:02:42 - Se recuperaron 4 entidades
+2024-11-27 21:09:20 - Application shutdown requested.
+2024-11-27 21:09:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:09:20 - HikariPool-1 - Shutdown initiated...
+2024-11-27 21:09:20 - HikariPool-1 - Shutdown completed.
+2024-11-27 21:10:37 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 9572 (C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 21:10:37 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 21:10:37 - No active profile set, falling back to default profiles: default
+2024-11-27 21:10:37 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-27 21:10:37 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-27 21:10:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 21:10:38 - Finished Spring Data repository scanning in 121 ms. Found 11 JPA repository interfaces.
+2024-11-27 21:10:39 - Tomcat initialized with port(s): 8080 (http)
+2024-11-27 21:10:39 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:10:39 - Starting service [Tomcat]
+2024-11-27 21:10:39 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-11-27 21:10:39 - Initializing Spring embedded WebApplicationContext
+2024-11-27 21:10:39 - Root WebApplicationContext: initialization completed in 1948 ms
+2024-11-27 21:10:39 - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [60A8E7EB0A8AFE6DD213E02FD468FC45]
+2024-11-27 21:10:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 21:10:39 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 21:10:40 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 21:10:40 - HikariPool-1 - Starting...
+2024-11-27 21:10:40 - HikariPool-1 - Start completed.
+2024-11-27 21:10:40 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 21:10:41 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 21:10:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:10:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:10:42 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79782eec, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f0c2dee, org.springframework.security.web.header.HeaderWriterFilter@2b33cbcd, org.springframework.security.web.csrf.CsrfFilter@443f7801, org.springframework.security.web.authentication.logout.LogoutFilter@2e3d36b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54027f55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24db2651, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e72476f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30148c6f, org.springframework.security.web.session.SessionManagementFilter@aa6708b, org.springframework.security.web.access.ExceptionTranslationFilter@1e844502, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42f8940a]
+2024-11-27 21:10:42 - Adding welcome page template: index
+2024-11-27 21:10:42 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 21:10:43 - LiveReload server is running on port 35729
+2024-11-27 21:10:43 - Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-11-27 21:10:43 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:10:43 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-27 21:10:43 - Started TrabajoFinalApplication in 6.219 seconds (JVM running for 7.061)
+2024-11-27 21:10:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:10:43 - Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:10:43 - Completed initialization in 1 ms
+2024-11-27 21:15:46 - Application shutdown requested.
+2024-11-27 21:15:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:15:46 - HikariPool-1 - Shutdown initiated...
+2024-11-27 21:15:46 - HikariPool-1 - Shutdown completed.
+2024-11-27 21:16:10 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 21:16:10 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 7968 (C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 21:16:10 - No active profile set, falling back to default profiles: default
+2024-11-27 21:16:10 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-27 21:16:10 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-27 21:16:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 21:16:11 - Finished Spring Data repository scanning in 81 ms. Found 11 JPA repository interfaces.
+2024-11-27 21:16:12 - Tomcat initialized with port(s): 8080 (http)
+2024-11-27 21:16:12 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:16:12 - Starting service [Tomcat]
+2024-11-27 21:16:12 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-11-27 21:16:12 - Initializing Spring embedded WebApplicationContext
+2024-11-27 21:16:12 - Root WebApplicationContext: initialization completed in 1447 ms
+2024-11-27 21:16:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 21:16:12 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 21:16:12 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 21:16:12 - HikariPool-1 - Starting...
+2024-11-27 21:16:12 - HikariPool-1 - Start completed.
+2024-11-27 21:16:12 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 21:16:13 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 21:16:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:16:14 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:16:14 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7909a0b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4294469a, org.springframework.security.web.header.HeaderWriterFilter@1ed36011, org.springframework.security.web.csrf.CsrfFilter@2e6ed9a8, org.springframework.security.web.authentication.logout.LogoutFilter@463f6cc3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7bfc8f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26c6917e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54402405, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18cae6ab, org.springframework.security.web.session.SessionManagementFilter@325eab1a, org.springframework.security.web.access.ExceptionTranslationFilter@85474cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4df71d1e]
+2024-11-27 21:16:14 - Adding welcome page template: index
+2024-11-27 21:16:14 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 21:16:15 - LiveReload server is running on port 35729
+2024-11-27 21:16:15 - Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-11-27 21:16:15 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:16:15 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-27 21:16:15 - Started TrabajoFinalApplication in 5.077 seconds (JVM running for 5.742)
+2024-11-27 21:16:17 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:16:17 - Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:16:17 - Completed initialization in 1 ms
+2024-11-27 21:18:23 - Recuperando todas las entidades
+2024-11-27 21:18:23 - Se recuperaron 4 entidades
+2024-11-27 21:18:52 - Buscando entidad con ID: 75564214
+2024-11-27 21:18:52 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@28fd5ff3
+2024-11-27 21:18:52 - Recuperando todas las entidades
+2024-11-27 21:18:52 - Se recuperaron 4 entidades
+2024-11-27 21:18:53 - Buscando entidad con ID: 115
+2024-11-27 21:18:53 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Producto@442a1bab
+2024-11-27 21:18:53 - Buscando entidad con ID: 75564214
+2024-11-27 21:18:53 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@35994b81
+2024-11-27 21:18:57 - Buscando entidad con ID: 75564214
+2024-11-27 21:18:57 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@32f13f3e
+2024-11-27 21:18:57 - Buscando entidad con ID: 115
+2024-11-27 21:18:57 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Producto@ec2d2b40
+2024-11-27 21:18:57 - Creando entidad: edu.pe.utp.TrabajoFinal.model.CarritoCompra@6cd728dd
+2024-11-27 21:18:57 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.CarritoCompra@6cd728dd
+2024-11-27 21:18:57 - Buscando entidad con ID: 75564214
+2024-11-27 21:18:57 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@19f42f90
+2024-11-27 21:18:57 - Recuperando todas las entidades
+2024-11-27 21:18:57 - Se recuperaron 4 entidades
+2024-11-27 21:19:06 - Buscando entidad con ID: 75564214
+2024-11-27 21:19:06 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@dfce56d9
+2024-11-27 21:19:10 - Eliminando entidad con ID: 151
+2024-11-27 21:19:10 - Entidad con ID 151 eliminada con éxito
+2024-11-27 21:19:10 - Buscando entidad con ID: 75564214
+2024-11-27 21:19:10 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@ac0449fe
+2024-11-27 21:28:11 - Buscando entidad con ID: 75564214
+2024-11-27 21:28:11 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@bd48909f
+2024-11-27 21:41:43 - Application shutdown requested.
+2024-11-27 21:41:43 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:41:43 - HikariPool-1 - Shutdown initiated...
+2024-11-27 21:41:43 - HikariPool-1 - Shutdown completed.
+2024-11-27 21:41:53 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 21:41:53 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 18780 (C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 21:41:53 - No active profile set, falling back to default profiles: default
+2024-11-27 21:41:53 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-27 21:41:53 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-27 21:41:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 21:41:54 - Finished Spring Data repository scanning in 93 ms. Found 11 JPA repository interfaces.
+2024-11-27 21:41:54 - Tomcat initialized with port(s): 8080 (http)
+2024-11-27 21:41:54 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:41:54 - Starting service [Tomcat]
+2024-11-27 21:41:54 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-11-27 21:41:55 - Initializing Spring embedded WebApplicationContext
+2024-11-27 21:41:55 - Root WebApplicationContext: initialization completed in 1655 ms
+2024-11-27 21:41:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 21:41:55 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 21:41:55 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 21:41:55 - HikariPool-1 - Starting...
+2024-11-27 21:41:55 - HikariPool-1 - Start completed.
+2024-11-27 21:41:55 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 21:41:57 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 21:41:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:41:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:41:58 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64843423, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a909fda, org.springframework.security.web.header.HeaderWriterFilter@948536b, org.springframework.security.web.csrf.CsrfFilter@4ea56ca4, org.springframework.security.web.authentication.logout.LogoutFilter@1834ec0e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66639f2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77ed51f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f20f89e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dbf6630, org.springframework.security.web.session.SessionManagementFilter@2198190e, org.springframework.security.web.access.ExceptionTranslationFilter@30474cf1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56baca0c]
+2024-11-27 21:41:58 - Adding welcome page template: index
+2024-11-27 21:41:58 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 21:41:59 - LiveReload server is running on port 35729
+2024-11-27 21:41:59 - Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-11-27 21:41:59 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 21:41:59 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-27 21:41:59 - Started TrabajoFinalApplication in 6.362 seconds (JVM running for 7.082)
+2024-11-27 21:41:59 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 21:41:59 - Initializing Servlet 'dispatcherServlet'
+2024-11-27 21:41:59 - Completed initialization in 1 ms
+2024-11-27 21:52:59 - Buscando entidad con ID: 32432432
+2024-11-27 21:52:59 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@bb4e5765
+2024-11-27 21:53:02 - Buscando entidad con ID: 32432432
+2024-11-27 21:53:02 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@3d0e8564
+2024-11-27 21:53:02 - Recuperando todas las entidades
+2024-11-27 21:53:02 - Se recuperaron 4 entidades
+2024-11-27 21:53:04 - Buscando entidad con ID: 115
+2024-11-27 21:53:04 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Producto@d5e8de47
+2024-11-27 21:53:04 - Buscando entidad con ID: 32432432
+2024-11-27 21:53:04 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@ec436cea
+2024-11-27 21:53:07 - Buscando entidad con ID: 75564214
+2024-11-27 21:53:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@150641db
+2024-11-27 21:53:07 - Buscando entidad con ID: 115
+2024-11-27 21:53:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Producto@d55db880
+2024-11-27 21:53:07 - Creando entidad: edu.pe.utp.TrabajoFinal.model.CarritoCompra@434d86ab
+2024-11-27 21:53:07 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.CarritoCompra@434d86ab
+2024-11-27 21:53:07 - Buscando entidad con ID: 32432432
+2024-11-27 21:53:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@4db414f9
+2024-11-27 21:53:07 - Recuperando todas las entidades
+2024-11-27 21:53:07 - Se recuperaron 4 entidades
+2024-11-27 21:53:09 - Buscando entidad con ID: 75564214
+2024-11-27 21:53:09 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@67237517
+2024-11-27 21:53:11 - Eliminando entidad con ID: 152
+2024-11-27 21:53:11 - Entidad con ID 152 eliminada con éxito
+2024-11-27 21:53:11 - Buscando entidad con ID: 75564214
+2024-11-27 21:53:11 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@68adc72a
+2024-11-27 21:54:44 - Buscando entidad con ID: 32432432
+2024-11-27 21:54:44 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Cliente@68abf500
+2024-11-27 21:55:27 - Recuperando todas las entidades
+2024-11-27 21:55:27 - Se recuperaron 1 entidades
+2024-11-27 21:55:29 - Recuperando todas las entidades
+2024-11-27 21:55:29 - Se recuperaron 4 entidades
+2024-11-27 21:55:36 - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "producto/mantenimiento-productos": An error happened during template parsing (template: "class path resource [templates/producto/mantenimiento-productos.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/producto/mantenimiento-productos.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.attoparser.ParseException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringActionTagProcessor' (template: "producto/mantenimiento-productos" - line 151, col 13)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 93 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringActionTagProcessor' (template: "producto/mantenimiento-productos" - line 151, col 13)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 95 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot create a session after the response has been committed
+	at org.apache.catalina.connector.Request.doGetSession(Request.java:3049)
+	at org.apache.catalina.connector.Request.getSession(Request.java:2493)
+	at org.apache.catalina.connector.RequestFacade.getSession(RequestFacade.java:908)
+	at org.apache.catalina.connector.RequestFacade.getSession(RequestFacade.java:920)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:253)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:253)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:253)
+	at org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.saveToken(HttpSessionCsrfTokenRepository.java:58)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken.saveTokenIfNecessary(LazyCsrfTokenRepository.java:168)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken.getToken(LazyCsrfTokenRepository.java:125)
+	at org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor.getExtraHiddenFields(CsrfRequestDataValueProcessor.java:73)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestDataValueProcessor.getExtraHiddenFields(SpringWebMvcThymeleafRequestDataValueProcessor.java:80)
+	at org.thymeleaf.spring5.requestdata.RequestDataValueProcessorUtils.getExtraHiddenFields(RequestDataValueProcessorUtils.java:79)
+	at org.thymeleaf.spring5.processor.SpringActionTagProcessor.doProcess(SpringActionTagProcessor.java:118)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:160)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 108 common frames omitted
+2024-11-27 21:55:36 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/producto/mantenimiento-productos.html]")] with root cause
+java.lang.IllegalStateException: Cannot create a session after the response has been committed
+	at org.apache.catalina.connector.Request.doGetSession(Request.java:3049)
+	at org.apache.catalina.connector.Request.getSession(Request.java:2493)
+	at org.apache.catalina.connector.RequestFacade.getSession(RequestFacade.java:908)
+	at org.apache.catalina.connector.RequestFacade.getSession(RequestFacade.java:920)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:253)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:253)
+	at javax.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:253)
+	at org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.saveToken(HttpSessionCsrfTokenRepository.java:58)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken.saveTokenIfNecessary(LazyCsrfTokenRepository.java:168)
+	at org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken.getToken(LazyCsrfTokenRepository.java:125)
+	at org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor.getExtraHiddenFields(CsrfRequestDataValueProcessor.java:73)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestDataValueProcessor.getExtraHiddenFields(SpringWebMvcThymeleafRequestDataValueProcessor.java:80)
+	at org.thymeleaf.spring5.requestdata.RequestDataValueProcessorUtils.getExtraHiddenFields(RequestDataValueProcessorUtils.java:79)
+	at org.thymeleaf.spring5.processor.SpringActionTagProcessor.doProcess(SpringActionTagProcessor.java:118)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:160)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1400)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-11-27 21:55:36 - Cannot render error page for request [/oulala/producto/manteminientoProductos] and exception [An error happened during template parsing (template: "class path resource [templates/producto/mantenimiento-productos.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2024-11-27 21:56:03 - Application shutdown requested.
+2024-11-27 21:56:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:56:03 - HikariPool-1 - Shutdown initiated...
+2024-11-27 21:56:03 - HikariPool-1 - Shutdown completed.
+2024-11-27 21:56:56 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest], using SpringBootContextLoader
+2024-11-27 21:56:56 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-11-27 21:56:56 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest]: ClienteServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-27 21:56:56 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest
+2024-11-27 21:56:56 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-11-27 21:56:56 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6399551e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@13d73fa, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5023bb8b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d5f10b2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74c79fa2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e0f9063, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53bd8fca, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7642df8f, org.springframework.test.context.event.EventPublishingTestExecutionListener@3e30646a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5cde6747, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@63a270c9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37c7595, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3ed242a4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1199fe66, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@614df0a4]
+2024-11-27 21:56:56 - Starting ClienteServiceImplTest using Java 20.0.2 on DESKTOP-U96K957 with PID 9772 (started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 21:56:56 - No active profile set, falling back to default profiles: default
+2024-11-27 21:56:56 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 21:56:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 21:56:58 - Finished Spring Data repository scanning in 131 ms. Found 11 JPA repository interfaces.
+2024-11-27 21:56:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 21:56:59 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 21:56:59 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 21:56:59 - HikariPool-1 - Starting...
+2024-11-27 21:56:59 - HikariPool-1 - Start completed.
+2024-11-27 21:56:59 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 21:57:01 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 21:57:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:57:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:57:02 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f381eaf, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bfa5678, org.springframework.security.web.header.HeaderWriterFilter@4d22265c, org.springframework.security.web.csrf.CsrfFilter@4daead88, org.springframework.security.web.authentication.logout.LogoutFilter@477d6f66, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47d4468a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2178d296, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e581302, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5df7ae0a, org.springframework.security.web.session.SessionManagementFilter@7ec68821, org.springframework.security.web.access.ExceptionTranslationFilter@5184da2b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25511895]
+2024-11-27 21:57:03 - Adding welcome page template: index
+2024-11-27 21:57:03 - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 21:57:03 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-27 21:57:03 - Started ClienteServiceImplTest in 7.565 seconds (JVM running for 9.078)
+2024-11-27 21:57:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:57:04 - HikariPool-1 - Shutdown initiated...
+2024-11-27 21:57:04 - HikariPool-1 - Shutdown completed.
+2024-11-27 21:58:51 - Buscando entidad con ID: 1
+2024-11-27 21:58:51 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.DetalleVenta@63fd4873
+2024-11-27 21:58:51 - Buscando entidad con ID: 1
+2024-11-27 21:58:51 - Entidad con ID 1 no encontrada
+2024-11-27 21:58:51 - Eliminando entidad con ID: 1
+2024-11-27 21:58:51 - Entidad con ID 1 eliminada con éxito
+2024-11-27 21:58:51 - Creando entidad: edu.pe.utp.TrabajoFinal.model.DetalleVenta@58a55449
+2024-11-27 21:58:51 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.DetalleVenta@58a55449
+2024-11-27 21:59:43 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest], using SpringBootContextLoader
+2024-11-27 21:59:43 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-11-27 21:59:43 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest]: VentaServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-27 21:59:43 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest
+2024-11-27 21:59:44 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-11-27 21:59:44 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@758705fa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@ebaa6cb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@906d29b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@49d3c823, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@436bc36, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5fe1ce85, org.springframework.test.context.transaction.TransactionalTestExecutionListener@604c5de8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@37091312, org.springframework.test.context.event.EventPublishingTestExecutionListener@66fdec9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@57abad67, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@550a1967, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a640157, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52851b44, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@584f54e6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d8bafa9]
+2024-11-27 21:59:44 - Starting VentaServiceImplTest using Java 20.0.2 on DESKTOP-U96K957 with PID 16860 (started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 21:59:44 - No active profile set, falling back to default profiles: default
+2024-11-27 21:59:44 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 21:59:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 21:59:46 - Finished Spring Data repository scanning in 126 ms. Found 11 JPA repository interfaces.
+2024-11-27 21:59:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 21:59:47 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 21:59:47 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 21:59:47 - HikariPool-1 - Starting...
+2024-11-27 21:59:47 - HikariPool-1 - Start completed.
+2024-11-27 21:59:47 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 21:59:48 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 21:59:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:59:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 21:59:50 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e7ddf8d, org.springframework.security.web.context.SecurityContextPersistenceFilter@175c26ff, org.springframework.security.web.header.HeaderWriterFilter@255b84a9, org.springframework.security.web.csrf.CsrfFilter@15af06f, org.springframework.security.web.authentication.logout.LogoutFilter@73a88711, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ba015b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@332610ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c76762, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47f8374, org.springframework.security.web.session.SessionManagementFilter@11c40a65, org.springframework.security.web.access.ExceptionTranslationFilter@19834eb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f4b8027]
+2024-11-27 21:59:51 - Adding welcome page template: index
+2024-11-27 21:59:51 - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 21:59:51 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-11-27 21:59:51 - Started VentaServiceImplTest in 7.758 seconds (JVM running for 8.987)
+2024-11-27 21:59:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 21:59:52 - HikariPool-1 - Shutdown initiated...
+2024-11-27 21:59:52 - HikariPool-1 - Shutdown completed.
+2024-11-27 22:03:27 - HV000001: Hibernate Validator 6.2.0.Final
+2024-11-27 22:03:27 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 14604 (C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal 2.0\TrabajoFinal)
+2024-11-27 22:03:27 - No active profile set, falling back to default profiles: default
+2024-11-27 22:03:27 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-27 22:03:27 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-27 22:03:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 22:03:28 - Finished Spring Data repository scanning in 85 ms. Found 11 JPA repository interfaces.
+2024-11-27 22:03:28 - Tomcat initialized with port(s): 8080 (http)
+2024-11-27 22:03:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 22:03:28 - Starting service [Tomcat]
+2024-11-27 22:03:28 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-11-27 22:03:28 - Initializing Spring embedded WebApplicationContext
+2024-11-27 22:03:28 - Root WebApplicationContext: initialization completed in 1510 ms
+2024-11-27 22:03:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 22:03:29 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-27 22:03:29 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-27 22:03:29 - HikariPool-1 - Starting...
+2024-11-27 22:03:29 - HikariPool-1 - Start completed.
+2024-11-27 22:03:29 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-27 22:03:30 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-27 22:03:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 22:03:30 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 22:03:31 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@410eac34, org.springframework.security.web.context.SecurityContextPersistenceFilter@549a980c, org.springframework.security.web.header.HeaderWriterFilter@61084b9b, org.springframework.security.web.csrf.CsrfFilter@76e3271f, org.springframework.security.web.authentication.logout.LogoutFilter@2bc085ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@350584ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fa1f0c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5759667c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46ead1a, org.springframework.security.web.session.SessionManagementFilter@165c7a55, org.springframework.security.web.access.ExceptionTranslationFilter@2bb2f84d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24468a3f]
+2024-11-27 22:03:31 - Adding welcome page template: index
+2024-11-27 22:03:31 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-11-27 22:03:31 - LiveReload server is running on port 35729
+2024-11-27 22:03:31 - Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-11-27 22:03:31 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 22:03:31 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-27 22:03:32 - Started TrabajoFinalApplication in 5.16 seconds (JVM running for 5.881)
+2024-11-27 22:03:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 22:03:32 - Initializing Servlet 'dispatcherServlet'
+2024-11-27 22:03:32 - Completed initialization in 1 ms
+2024-11-27 22:07:08 - Application shutdown requested.
+2024-11-27 22:07:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 22:07:08 - HikariPool-1 - Shutdown initiated...
+2024-11-27 22:07:08 - HikariPool-1 - Shutdown completed.
+2024-12-04 18:30:47 - HV000001: Hibernate Validator 6.2.0.Final
+2024-12-04 18:30:47 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 14260 (C:\Users\owenc\Desktop\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal)
+2024-12-04 18:30:47 - No active profile set, falling back to default profiles: default
+2024-12-04 18:30:47 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-04 18:30:47 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-04 18:30:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 18:30:48 - Finished Spring Data repository scanning in 76 ms. Found 11 JPA repository interfaces.
+2024-12-04 18:30:49 - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 18:30:49 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-04 18:30:49 - Starting service [Tomcat]
+2024-12-04 18:30:49 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-12-04 18:30:49 - Initializing Spring embedded WebApplicationContext
+2024-12-04 18:30:49 - Root WebApplicationContext: initialization completed in 1406 ms
+2024-12-04 18:30:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 18:30:49 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-12-04 18:30:49 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-04 18:30:49 - HikariPool-1 - Starting...
+2024-12-04 18:30:49 - HikariPool-1 - Start completed.
+2024-12-04 18:30:49 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-04 18:30:50 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-04 18:30:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:30:51 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-04 18:30:51 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d5c6109, org.springframework.security.web.context.SecurityContextPersistenceFilter@f008a6c, org.springframework.security.web.header.HeaderWriterFilter@60ffc35e, org.springframework.security.web.csrf.CsrfFilter@6d789046, org.springframework.security.web.authentication.logout.LogoutFilter@51f49709, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@309bf94a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ce3b322, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45124cc7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e2b889b, org.springframework.security.web.session.SessionManagementFilter@542f8a7e, org.springframework.security.web.access.ExceptionTranslationFilter@23e2fa87, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21473032]
+2024-12-04 18:30:51 - Adding welcome page template: index
+2024-12-04 18:30:51 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-12-04 18:30:52 - LiveReload server is running on port 35729
+2024-12-04 18:30:52 - Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-12-04 18:30:52 - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-04 18:30:52 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 18:30:52 - Started TrabajoFinalApplication in 4.796 seconds (JVM running for 5.445)
+2024-12-04 18:30:52 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 18:30:52 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 18:30:52 - Completed initialization in 1 ms
+2024-12-04 18:31:56 - Application shutdown requested.
+2024-12-04 18:31:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:31:56 - HikariPool-1 - Shutdown initiated...
+2024-12-04 18:31:56 - HikariPool-1 - Shutdown completed.
+2024-12-04 18:32:56 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.AuthorityServiceImplTest], using SpringBootContextLoader
+2024-12-04 18:32:56 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.AuthorityServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-04 18:32:56 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.AuthorityServiceImplTest]: AuthorityServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 18:32:56 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.AuthorityServiceImplTest
+2024-12-04 18:32:56 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-04 18:32:56 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@698122b2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4212a0c8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e7aa82b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b2c0e88, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5bd82fed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c1bd0be, org.springframework.test.context.transaction.TransactionalTestExecutionListener@476b0ae6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c6804cd, org.springframework.test.context.event.EventPublishingTestExecutionListener@655f7ea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@549949be, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b3a45f1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@17a87e37, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3eeb318f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20a14b55, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@39ad977d]
+2024-12-04 18:32:57 - Starting AuthorityServiceImplTest using Java 20.0.2 on DESKTOP-U96K957 with PID 20672 (started by owenc in C:\Users\owenc\Desktop\TrabajoFinal)
+2024-12-04 18:32:57 - No active profile set, falling back to default profiles: default
+2024-12-04 18:32:57 - HV000001: Hibernate Validator 6.2.0.Final
+2024-12-04 18:32:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 18:32:58 - Finished Spring Data repository scanning in 119 ms. Found 11 JPA repository interfaces.
+2024-12-04 18:32:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 18:32:59 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-12-04 18:32:59 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-04 18:33:00 - HikariPool-1 - Starting...
+2024-12-04 18:33:00 - HikariPool-1 - Start completed.
+2024-12-04 18:33:00 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-04 18:33:01 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-04 18:33:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:33:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-04 18:33:03 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58189132, org.springframework.security.web.context.SecurityContextPersistenceFilter@5df7ae0a, org.springframework.security.web.header.HeaderWriterFilter@60739eca, org.springframework.security.web.csrf.CsrfFilter@21202507, org.springframework.security.web.authentication.logout.LogoutFilter@1443539, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@69d2c460, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cff6d1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36c1b6ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2305aad0, org.springframework.security.web.session.SessionManagementFilter@147aceec, org.springframework.security.web.access.ExceptionTranslationFilter@b0d4873, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33502cfe]
+2024-12-04 18:33:03 - Adding welcome page template: index
+2024-12-04 18:33:03 - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-12-04 18:33:04 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-04 18:33:04 - Started AuthorityServiceImplTest in 7.606 seconds (JVM running for 8.94)
+2024-12-04 18:33:04 - Buscando entidad con ID: 1
+2024-12-04 18:33:05 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Authority@225d93aa
+2024-12-04 18:33:05 - Buscando entidad con ID: 2
+2024-12-04 18:33:05 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Authority@35ef158f
+2024-12-04 18:33:05 - Buscando entidad con ID: 1
+2024-12-04 18:33:05 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.DetalleVenta@5e6b2641
+2024-12-04 18:33:05 - Buscando entidad con ID: 1
+2024-12-04 18:33:05 - Entidad con ID 1 no encontrada
+2024-12-04 18:33:05 - Eliminando entidad con ID: 1
+2024-12-04 18:33:05 - Entidad con ID 1 eliminada con éxito
+2024-12-04 18:33:05 - Creando entidad: edu.pe.utp.TrabajoFinal.model.DetalleVenta@d65ba64
+2024-12-04 18:33:05 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.DetalleVenta@d65ba64
+2024-12-04 18:33:05 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest], using SpringBootContextLoader
+2024-12-04 18:33:05 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-04 18:33:05 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest]: VentaServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 18:33:05 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.VentaServiceImplTest
+2024-12-04 18:33:05 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-04 18:33:05 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@609f136b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2afe263, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6c4f48e2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5988e36e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4194a77f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3c55e9d4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2acbbee4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3446ab40, org.springframework.test.context.event.EventPublishingTestExecutionListener@500d4de8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@43851574, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@344eaf7e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35d31e1c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f8b6743, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@644eed73, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@253a8bdb]
+2024-12-04 18:33:05 - Starting VentaServiceImplTest using Java 20.0.2 on DESKTOP-U96K957 with PID 20672 (started by owenc in C:\Users\owenc\Desktop\TrabajoFinal)
+2024-12-04 18:33:05 - No active profile set, falling back to default profiles: default
+2024-12-04 18:33:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 18:33:05 - Finished Spring Data repository scanning in 91 ms. Found 11 JPA repository interfaces.
+2024-12-04 18:33:05 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 18:33:05 - HikariPool-2 - Starting...
+2024-12-04 18:33:05 - HikariPool-2 - Start completed.
+2024-12-04 18:33:05 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-04 18:33:06 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-04 18:33:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:33:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-04 18:33:06 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cbf1c30, org.springframework.security.web.context.SecurityContextPersistenceFilter@7262532a, org.springframework.security.web.header.HeaderWriterFilter@533ed36e, org.springframework.security.web.csrf.CsrfFilter@3aee72d8, org.springframework.security.web.authentication.logout.LogoutFilter@2625eb84, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7eaa52d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44bbf5e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@613bebb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c5095df, org.springframework.security.web.session.SessionManagementFilter@3b538e2a, org.springframework.security.web.access.ExceptionTranslationFilter@38d1c7d2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40e420fe]
+2024-12-04 18:33:07 - Adding welcome page template: index
+2024-12-04 18:33:07 - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-12-04 18:33:07 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-12-04 18:33:07 - Started VentaServiceImplTest in 2.328 seconds (JVM running for 11.782)
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Producto@b2206c85
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 no encontrada
+2024-12-04 18:33:07 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.CarritoCompraServiceImplTest], using SpringBootContextLoader
+2024-12-04 18:33:07 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.CarritoCompraServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-04 18:33:07 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.CarritoCompraServiceImplTest]: CarritoCompraServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 18:33:07 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.CarritoCompraServiceImplTest
+2024-12-04 18:33:07 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-04 18:33:07 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61aaec51, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@69dc0dd1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@9d10078, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6587c92f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@537979aa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5ac25491, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b115d71, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4398d, org.springframework.test.context.event.EventPublishingTestExecutionListener@18a8a40e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@50061d56, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1ad28f2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2044a11b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7d91e9c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d9db780, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@759fe679]
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.DetalleCompra@4c33bf70
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 no encontrada
+2024-12-04 18:33:07 - Eliminando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 eliminada con éxito
+2024-12-04 18:33:07 - Creando entidad: edu.pe.utp.TrabajoFinal.model.DetalleCompra@14abde3e
+2024-12-04 18:33:07 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.DetalleCompra@14abde3e
+2024-12-04 18:33:07 - Creando entidad: edu.pe.utp.TrabajoFinal.model.Proveedor@6dd0e2f4
+2024-12-04 18:33:07 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.Proveedor@6dd0e2f4
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Proveedor@292237cd
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 no encontrada
+2024-12-04 18:33:07 - Eliminando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 eliminada con éxito
+2024-12-04 18:33:07 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest], using SpringBootContextLoader
+2024-12-04 18:33:07 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-04 18:33:07 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest]: ClienteServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 18:33:07 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.ClienteServiceImplTest
+2024-12-04 18:33:07 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-04 18:33:07 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32fa7ff0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32fccfc2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4702faee, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@576d4810, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3609b8f2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62dfe32e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@32dab011, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@fca4392, org.springframework.test.context.event.EventPublishingTestExecutionListener@747fb4b1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6924ff83, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e19908e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5312940c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5ac168e3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@14574cdf, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5608233b]
+2024-12-04 18:33:07 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.utp.TrabajoFinal.service.test.CompraServiceImplTest], using SpringBootContextLoader
+2024-12-04 18:33:07 - Could not detect default resource locations for test class [edu.pe.utp.TrabajoFinal.service.test.CompraServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-04 18:33:07 - Could not detect default configuration classes for test class [edu.pe.utp.TrabajoFinal.service.test.CompraServiceImplTest]: CompraServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04 18:33:07 - Found @SpringBootConfiguration edu.pe.utp.TrabajoFinal.TrabajoFinalApplication for test class edu.pe.utp.TrabajoFinal.service.test.CompraServiceImplTest
+2024-12-04 18:33:07 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-04 18:33:07 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@75564689, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65977161, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5f7e2ca8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1d07fb2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46f5030f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18b77ec9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@36821a1b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34adce96, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a2e4e77, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@794c22cd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5fb8ad3d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5bb0122, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2d4eba14, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@358caf3a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2fc72df3]
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad encontrada: edu.pe.utp.TrabajoFinal.model.Trabajador@68032a80
+2024-12-04 18:33:07 - Buscando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 no encontrada
+2024-12-04 18:33:07 - Eliminando entidad con ID: 1
+2024-12-04 18:33:07 - Entidad con ID 1 eliminada con éxito
+2024-12-04 18:33:07 - Creando entidad: edu.pe.utp.TrabajoFinal.model.Trabajador@410185ec
+2024-12-04 18:33:07 - Entidad creada con éxito: edu.pe.utp.TrabajoFinal.model.Trabajador@410185ec
+2024-12-04 18:33:07 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.pe.idat.TrabajoFinal.TrabajoFinalApplicationTests], using SpringBootContextLoader
+2024-12-04 18:33:07 - Could not detect default resource locations for test class [edu.pe.idat.TrabajoFinal.TrabajoFinalApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-04 18:33:07 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-04 18:33:07 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36bf903c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a073f4f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@55b9ffd0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@a5f5b96, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@40ab1491, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5345b68c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4998944b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@39ebf505, org.springframework.test.context.event.EventPublishingTestExecutionListener@217c7135, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f735240, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52c4bf29, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34612ba9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@765611c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33f2ac11, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@44b860b1]
+2024-12-04 18:33:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:33:07 - HikariPool-1 - Shutdown initiated...
+2024-12-04 18:33:07 - HikariPool-1 - Shutdown completed.
+2024-12-04 18:33:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:33:07 - HikariPool-2 - Shutdown initiated...
+2024-12-04 18:33:08 - HikariPool-2 - Shutdown completed.
+2024-12-04 18:33:19 - HV000001: Hibernate Validator 6.2.0.Final
+2024-12-04 18:33:19 - Starting TrabajoFinalApplication using Java 20.0.2 on DESKTOP-U96K957 with PID 17244 (C:\Users\owenc\Desktop\TrabajoFinal\target\classes started by owenc in C:\Users\owenc\Desktop\TrabajoFinal)
+2024-12-04 18:33:19 - No active profile set, falling back to default profiles: default
+2024-12-04 18:33:19 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-04 18:33:19 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-04 18:33:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 18:33:20 - Finished Spring Data repository scanning in 87 ms. Found 11 JPA repository interfaces.
+2024-12-04 18:33:21 - Tomcat initialized with port(s): 8080 (http)
+2024-12-04 18:33:21 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-04 18:33:21 - Starting service [Tomcat]
+2024-12-04 18:33:21 - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2024-12-04 18:33:21 - Initializing Spring embedded WebApplicationContext
+2024-12-04 18:33:21 - Root WebApplicationContext: initialization completed in 1629 ms
+2024-12-04 18:33:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 18:33:21 - HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-12-04 18:33:21 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-04 18:33:21 - HikariPool-1 - Starting...
+2024-12-04 18:33:21 - HikariPool-1 - Start completed.
+2024-12-04 18:33:21 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-12-04 18:33:22 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-04 18:33:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 18:33:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-04 18:33:23 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26ca96a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@cdac031, org.springframework.security.web.header.HeaderWriterFilter@2bc085ec, org.springframework.security.web.csrf.CsrfFilter@5f20f89e, org.springframework.security.web.authentication.logout.LogoutFilter@84d39ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39da50b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19114cb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@615f8ce7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73f5be0a, org.springframework.security.web.session.SessionManagementFilter@10e97b99, org.springframework.security.web.access.ExceptionTranslationFilter@683d8f7d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2570e95c]
+2024-12-04 18:33:23 - Adding welcome page template: index
+2024-12-04 18:33:23 - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2024-12-04 18:33:24 - LiveReload server is running on port 35729
+2024-12-04 18:33:24 - Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-12-04 18:33:24 - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-04 18:33:24 - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-04 18:33:24 - Started TrabajoFinalApplication in 5.452 seconds (JVM running for 6.15)
+2024-12-04 18:33:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 18:33:24 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 18:33:24 - Completed initialization in 2 ms

@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import edu.pe.utp.TrabajoFinal.entity.CarritoCompra;
-import edu.pe.utp.TrabajoFinal.entity.Cliente;
-import edu.pe.utp.TrabajoFinal.entity.Producto;
+import edu.pe.utp.TrabajoFinal.model.CarritoCompra;
+import edu.pe.utp.TrabajoFinal.model.Cliente;
+import edu.pe.utp.TrabajoFinal.model.Producto;
 import edu.pe.utp.TrabajoFinal.security.MyUserDetails;
 import edu.pe.utp.TrabajoFinal.service.ClienteService;
 import edu.pe.utp.TrabajoFinal.service.ProductoService;
